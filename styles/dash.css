@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+    user-select: none;
+}
+
+body {
+    background: white;
+    background-image: url('../images/UPANG2.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-attachment: fixed;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1.5%;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 125px 1fr 1fr;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.logo {
+    width: 100px;
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(169, 9, 9);
+}
+
+.logout {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.icon {
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.icon.log {
+    border-radius: 15px;
+    padding: 0px;
+}
+
+.icon:hover {
+    background-color: rgb(218, 218, 218);
+}
+
+.icon:active {
+    background-color: rgb(230, 230, 230);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem 0 0 1rem;
+}
+
+.actions.large,
+.actions.small {
+    display: flex;
+    flex-direction: column;
+}
+
+.actions.small {
+    width: 50%;
+    min-width: 125px;
+    max-width: 300px;
+}
+
+.actions.large {
+    width: 100%;
+    min-width: 250px;
+    max-width: 600px;
+}
+
+.action {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 10px;
+    margin: 0 1rem 1rem 0;
+    height: 100%;
+    backdrop-filter: blur(1px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+                0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s;
+}
+
+.action-icon {
+    height: 100%;
+    margin: 2% 0;
+}
+
+h4 {
+    color: rgb(158, 31, 31);
+}
+
+.action:hover {
+    background-color: rgba(158, 31, 31, 0.75);
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.1),
+                2px 4px 6px rgba(0, 0, 0, 0.1);
+    h4 {
+        color: white;
+    }
+}

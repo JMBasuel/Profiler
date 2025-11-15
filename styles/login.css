@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+    user-select: none;
+}
+
+body {
+    background: white;
+    background-image: url('../images/UPANG2.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-attachment: fixed; 
+    height: 100vh; 
+    margin: 0; 
+    min-height: 100vh; 
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 5% 0;
+    width: 600px; 
+    max-width: 100%;  
+}
+
+.form {
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 500px;  
+    max-width: 100%;
+    padding: 40px;  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+                0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title p {
+    font-size: 24px; 
+    font-weight: 600;
+    color: #731018;
+    text-align: center;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 20px;
+    height: 60px;
+}
+
+.field input,
+.field button,
+.home {
+    font-size: 16px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+}
+
+.field input {
+    height: 40px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid #621b1b;
+    transition: border-color 0.2s ease;
+}
+
+.field button, .home {
+    margin-top: 10px;
+    font-weight: 600;
+    background-color: #731018;
+    cursor: pointer;
+    color: #fff;
+    transition: background-color 0.2s ease;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.eye-icon {
+    position: absolute;
+    top: 50%;
+    height: 25px;
+    right: 10px;
+    transform: translateY(-20%);
+    cursor: pointer;
+}
+
+.error {
+    position: absolute;
+    text-align: center;
+    margin-top: 10px;
+    left: 0;
+    right: 0;
+    font-size: 14px;
+    color: red;
+}
+
+.field label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 2px;
+}
+
+.field.buttons {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 0.5rem;
+    height: 40px;
+}
+
+.field input:focus {
+    border-color: #a5041f;
+    box-shadow: 0 0 5px rgba(249, 6, 45, 0.3);
+}
+
+.field button:hover,
+.home:hover {
+    background-color: #a5041f;
+}
